@@ -1,0 +1,2 @@
+version,device name,recording epoch time,recording time,recording timezone,platform,appVersion,device id,sensors,sampleRateMs,standardisation,platform version
+3,SM-A165F,1793535411318,2026-11-01_12-16-51,Africa/Nairobi,android,1.68,3a991153-f6b6-4f6c-9bd3-be365e329be7,Activity|Annotation|TotalAcceleration|AccelerometerUncalibrated,0||10|10,false,36
