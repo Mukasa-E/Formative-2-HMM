@@ -53,8 +53,6 @@ python convert_real_data.py
 
 This reads each session's `TotalAcceleration.csv`, auto-detects the sampling rate, and writes pipeline-ready CSVs. By default, the first 3 sessions per activity go to training and the last 2 to testing.
 
-*(The `data_generator.py` script generates synthetic data and is kept for reference only; it is not run when using real recordings.)*
-
 ### 2. Run the full pipeline
 ```bash
 cd src
@@ -71,7 +69,7 @@ This performs:
 
 ### 3. Open the notebook
 ```bash
-jupyter notebook notebooks/HMM_Activity_Recognition.ipynb
+jupyter notebook notebooks/Formative_2_HMM.ipynb
 ```
 
 ## Key Implementation Details
