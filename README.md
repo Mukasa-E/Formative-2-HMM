@@ -20,18 +20,18 @@ Formative 2 HMM/
 │       ├── jumping/
 │       └── still/
 ├── src/
-│   ├── convert_real_data.py  # Converts real sensor-logger sessions to pipeline format
-│   ├── features.py         # Time- & frequency-domain feature extraction + Z-score
-│   ├── hmm.py              # From-scratch HMM: Baum-Welch + Viterbi
-│   ├── visualization.py    # Heatmaps, decoded sequences, convergence, confusion matrix
-│   ├── run_pipeline.py     # End-to-end pipeline script
-│   └── data_generator.py   # Synthetic data generator (kept for reference; not used with real data)
+│   ├── convert_real_data.py 
+│   ├── features.py         
+│   ├── hmm.py              
+│   ├── visualization.py    
+│   ├── run_pipeline.py     
+│  
 ├── notebooks/
 │   └── HMM_Activity_Recognition.ipynb   # Main analysis notebook
-├── figures/              # Generated visualizations (transition matrix, etc.)
+├── figures/             
 ├── report/
 │   └── report_template.md  # Report template (4–5 pages)
-└── videos/               # Place your 4 data-collection videos here
+└── videos/              
 ```
 
 ## Requirements
@@ -87,21 +87,3 @@ jupyter notebook notebooks/HMM_Activity_Recognition.ipynb
 | Window size | 2 seconds (~125 samples at ~62.5 Hz) |
 | Data | Real sensor-logger recordings (~8–11 s per file), ~62.5 Hz |
 
-## Submission Checklist
-
-- [ ] Labelled CSV training files in `data/train/` (real recordings, converted via `convert_real_data.py`)
-- [ ] Unseen test CSV files in `data/test/` (real recordings, held out from training)
-- [ ] Python notebook `notebooks/HMM_Activity_Recognition.ipynb`
-- [ ] HMM from scratch (`src/hmm.py`) with Viterbi + Baum-Welch + convergence check
-- [ ] Transition matrix heatmap (`figures/transition_matrix.png`)
-- [ ] Decoded sequence plot (`figures/decoded_sequence.png`)
-- [ ] Confusion matrix (`figures/confusion_matrix.png`)
-- [ ] Sensitivity / Specificity / Accuracy table (printed by pipeline, copied into report)
-- [ ] **4 data-collection videos** (face visible, proper lighting) — place in `videos/` and link in report
-- [ ] Short report (4–5 pages) — see `report/report_template.md` (filled in with real results)
-
-> **Warning:** The rubric awards an immediate zero if any of the 4 activity videos is missing. Record one 5-second video per activity showing your full body holding the phone with your face visible.
-
-## License
-
-Educational project — Formative 2 HMM.
