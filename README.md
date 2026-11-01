@@ -44,8 +44,6 @@ pip install numpy matplotlib seaborn pandas jupyter
 
 ### 1. Prepare the dataset
 
-If you have your own sensor-logger session folders in `data/` (e.g. `Walking_1-.../`, `Standing_1-.../`), run the conversion script to reorganize them into `data/train/<activity>/` and `data/test/<activity>/`:
-
 ```bash
 cd src
 python convert_real_data.py
